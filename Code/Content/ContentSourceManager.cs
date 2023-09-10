@@ -15,8 +15,8 @@ internal class ContentSourceManager
 
     internal static object? TryLoadContentSource(TextureDataContentSource contentSource, IMonitor monitor)
     {
-        var (item1, item2, item3) = contentSource.GetData();
-		return TryLoadTextureProvider(contentSource, item1, item2, item3, monitor, out var provider) ? provider : null;
+        var data = contentSource.GetData();
+		return TryLoadTextureProvider(contentSource, data.Item1, data.Item2, data.Item3, monitor, out var provider) ? provider : null;
     }
 
 	private static bool TryLoadTextureProvider(IContentSource contentSource, string? imagePath, List<string>? source, object good, IMonitor monitor, out object? provider)
@@ -42,7 +42,6 @@ internal class ContentSourceManager
 				monitor.Log($"Couldn't load Mead from {manifest.Name} ({manifest.UniqueID}) because the Mead texture file path is invalid ({imagePath}).", LogLevel.Warn);
 			}
 		}
-
 		return false;
 	}
 }

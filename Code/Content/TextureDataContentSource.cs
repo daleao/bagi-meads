@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using StardewModdingAPI;
 
@@ -11,7 +12,7 @@ internal abstract class TextureDataContentSource : IContentSource
 
 	public abstract IManifest GetManifest();
 
-	public (string, List<string>, object) GetData()
+	public Tuple<string, List<string>, object> GetData()
 	{
 		return new(TextureData.Mead, TextureData.Flowers, Globals.MeadAsArtisanGoodEnum);
 	}

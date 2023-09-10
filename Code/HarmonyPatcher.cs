@@ -19,8 +19,8 @@ internal static class HarmonyPatcher
     private delegate bool GetDrawInfoDelegate(SObject output, out Texture2D textureSheet, out Rectangle mainPosition,
         out Rectangle iconPosition);
 
-    private static readonly GetDrawInfoDelegate GetDrawInfo = "BetterArtisanGoodIcons.ArtisanGoodsManager".ToType()
-        .RequireMethod("GetDrawInfo").CreateDelegate<GetDrawInfoDelegate>();
+    private static readonly GetDrawInfoDelegate GetDrawInfo = (GetDrawInfoDelegate)"BetterArtisanGoodIcons.ArtisanGoodsManager".ToType()
+        .RequireMethod("GetDrawInfo").CreateDelegate(typeof(GetDrawInfoDelegate));
 
     internal static void Apply(Harmony harmony)
     {
