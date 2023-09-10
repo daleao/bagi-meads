@@ -6,7 +6,6 @@
     <Version>1.2.0</Version>
     <TargetFramework>net452</TargetFramework>
     <EnableHarmony>true</EnableHarmony>
-    <GamePath>C:\dev\sdv\game\android\base\assemblies\out</GamePath>
   </PropertyGroup>
   
   <PropertyGroup>
@@ -14,13 +13,13 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <GamePath>G:\Steam\steamapps\common\Stardew Valley 1.5.6</GamePath>
-    <GameModsPath>$(GamePath)/Mods - Build/$(Configuration)</GameModsPath>
-    <ModZipPath>$(GamePath)/Mods - Build/Archive</ModZipPath>
+    <GamePath>C:\dev\sdv\game\android\apk\base\assemblies\out</GamePath>
+    <GameModsPath>$(GamePath)/Mods</GameModsPath>
+    <ModZipPath>$(GamePath)/Mods/Archive</ModZipPath>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.3.0"/>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.3.0" />
   </ItemGroup>
   
 </Project>
