@@ -3,8 +3,9 @@
     <AssemblyName>DaLion.Meads</AssemblyName>
     <RootNamespace>DaLion.Meads</RootNamespace>
     <Version>1.1.1</Version>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net452</TargetFramework>
 	<EnableHarmony>true</EnableHarmony>
+	<GamePath>C:\dev\sdv\game\android\base\assemblies\out</GamePath>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -12,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.2" />
+	  <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.3.0" />
   </ItemGroup>
 
 </Project>

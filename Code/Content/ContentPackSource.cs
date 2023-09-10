@@ -16,7 +16,7 @@ internal class ContentPackSource : TextureDataContentSource
 
 	public override T Load<T>(string path)
 	{
-		return _pack.ModContent.Load<T>(path);
+		return _pack.LoadAsset<T>(path);
 	}
 
 	public override IManifest GetManifest()
