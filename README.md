@@ -13,5 +13,5 @@ For that you will also require a mod like [Flower Meads](https://www.nexusmods.c
 ## Installation
 
 1. Make sure that [Better Artisan Good Icons](https://www.nexusmods.com/stardewvalley/mods/2080) is installed.
-2. Go to the [Releases page](https://github.com/daleao/bagi-meads/releases) and download the main file, as well as the desired content packs.
+2. Go to the [Releases page](https://github.com/daleao/bagi-meads/releases) and download one of the main files (PC or Android), as well as the desired content packs.
 3. Extract the downloaded archives to your mods folder.
