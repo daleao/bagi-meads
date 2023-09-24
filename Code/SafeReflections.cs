@@ -7,7 +7,7 @@ namespace DaLion.Meads;
 
 /// <summary>Provides extensions for simplified reflection on C# types.</summary>
 /// <remarks>Credit to <c>Pardeike</c>.</remarks>
-public static class TypeExtensions
+public static class SafeReflections
 {
     /// <summary>Get a type by name and assert that it was found.</summary>
     /// <param name="name">The name of the type, preferably with namespace.</param>
